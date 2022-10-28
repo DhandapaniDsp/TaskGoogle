@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shop page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./task.css" />
+    <link href="./login.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./script.js"></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="container-fluid scroll-static-btn">
+            <nav class="navbar navbar-expand-lg navbar-light Nav-bar">
+                <div class="google-head navbar-brand" onclick="location.href='login.html'"></div>
+                <button class="navbar-toggler tgl-btn" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse product-sec-head" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto" id="head">
+                        <li class="nav-item" id="Home">
+                            Home <span class="sr-only">(current)</span>
+                        </li>
+                        <br />
+                        <li class="nav-item" id="ProductNav">Products</li>
+                        <br />
+                        <li class="nav-item" id="Services">Services</li>
+                        <br />
+                        <li class="nav-item" id="About">AboutUs</li>
+                    </ul>
+                    <br />
+                    <button id="btn" onclick="profile(this)" class="btn-crt-act my-sm-0" type="submit">
+                        <span class="btn-crt-act-txt">Create Account</span>
+                    </button>
+
+                    <div class="prof-sec" id="prof" onclick="create(this)" style="display: none">
+                        <div class="row">
+                            <div class="prof-pic">
+                                <p class="prof-let">D</p>
+                            </div>
+                            <p class="bot-arrow">
+                                <span class="fa fa-angle-down fa-2x bot-arrow-clr"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <hr />
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3 checkboxes">
+                    <form class="check-sec">
+                        <p class="filter-check">Filters</p>
+                        <input type="checkbox" id="Phone" checked />
+                        <label for="Phone" class="check"> Phones</label><br />
+                        <input type="checkbox" id="Headphone" />
+                        <label for="Headphone" class="check">Headphones</label><br />
+                        <input type="checkbox" id="Accessories" />
+                        <label for="Accessories" class="check">Accessories</label><br />
+                    </form>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-8 col-xl-9 ">
+                    <div class="container">
+                        <div class="row prod scroll-head">
+                            <!-- col1 -->
+                            <div class="  col-sm-12 col-md-12 col-lg-6 col-xl-4 ">
+                                <div class="card" onmouseover="cardOne(this)" onmouseleave="cardHovOne(this)">
+                                    <div class="card-bg-px-five">
+                                        <div class="phn-px-five"></div>
+                                        <div class="card-title-normal" id="one">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <p class="card-title-name">Pixel 5</p>
+                                                    <p class="card-title-rate">$ 499</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="card-review-text">
+                                                        Smart,powerfull,helpfull
+                                                    </p>
+                                                    <p class="card-review-count">
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>(1.2k)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-title-normal" id="onehov" style="display: none">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div>
+                                                        <p class="card-title-hov-name">Pixel 5</p>
+                                                        <a class="view-prod-lnk" href="#" data-toggle="modal"
+                                                            data-target="#exampleModalLongs">viewdetails</a>
+                                                    </div>
+                                                    <button class="btn-buy" data-toggle="modal"
+                                                        data-target="#exampleModalLong">
+                                                        <span class="btn-buy-txt">Buy</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="card" onmouseover="cardTwo(this)" onmouseleave="cardHovTwo(this)">
+                                    <div class="card-bg-px-six-pro">
+                                        <div class="phn-px-six-pro"></div>
+                                        <div class="card-title-normal" id="two">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <p class="card-title-name">Pixel 6 Pro</p>
+                                                    <p class="card-title-rate">$ 499</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="card-review-text">Powerful,Smart</p>
+                                                    <p class="card-review-count">
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>(1.2k)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-title-normal" id="twohov" style="display: none">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div>
+                                                        <p class="card-title-hov-name">Pixel 6</p>
+                                                        <a class="view-prod-lnk" href="#" data-toggle="modal"
+                                                            data-target="#exampleModalLongs3">viewdetails</a>
+                                                    </div>
+                                                    <button class="btn-buy" data-toggle="modal"
+                                                        data-target="#exampleModalLong">
+                                                        <span class="btn-buy-txt">Buy</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="card" onmouseover="cardThree(this)" onmouseleave="cardHovThree(this)">
+                                    <div class="card-bg-px-five">
+                                        <div class="phn-px-five"></div>
+                                        <div class="card-title-normal" id="three">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <p class="card-title-name">Pixel 5</p>
+                                                    <p class="card-title-rate">$ 499</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="card-review-text">
+                                                        Smart,powerfull,helpfull
+                                                    </p>
+                                                    <p class="card-review-count">
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>(1.2k)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-title-normal" id="threehov" style="display: none">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div>
+                                                        <p class="card-title-hov-name">Pixel 5</p>
+                                                        <a class="view-prod-lnk" href="#" data-toggle="modal"
+                                                            data-target="#exampleModalLongs">viewdetails</a>
+                                                    </div>
+                                                    <button class="btn-buy" data-toggle="modal"
+                                                        data-target="#exampleModalLong">
+                                                        <span class="btn-buy-txt">Buy</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- col2 -->
+                            <div class=" col-sm-12 col-md-12 col-lg-6 col-xl-4 ">
+                                <div class="card" onmouseover="cardFour(this)" onmouseleave="cardHovFour(this)">
+                                    <div class="card-bg-px-six">
+                                        <div class="phn-px-six"></div>
+                                        <div class="card-title-normal" id="four">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <p class="card-title-name">Pixel 6</p>
+                                                    <p class="card-title-rate">$ 499</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="card-review-text">Smart</p>
+                                                    <p class="card-review-count">
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>(1.2k)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-title-normal" id="fourhov" style="display: none">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div>
+                                                        <p class="card-title-hov-name">Pixel 6</p>
+                                                        <a class="view-prod-lnk" href="#" data-toggle="modal"
+                                                            data-target="#exampleModalLongs3">viewdetails</a>
+                                                    </div>
+                                                    <button class="btn-buy" data-toggle="modal"
+                                                        data-target="#exampleModalLong">
+                                                        <span class="btn-buy-txt">Buy</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+
+                                <div class="card" onmouseover="cardFive(this)" onmouseleave="cardHovFive(this)">
+                                    <div class="card-bg-px-six">
+                                        <div class="phn-px-six"></div>
+                                        <div class="card-title-normal" id="five">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <p class="card-title-name">Pixel 6</p>
+                                                    <p class="card-title-rate">$ 499</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="card-review-text">Smart</p>
+                                                    <p class="card-review-count">
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>(1.2k)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-title-normal" id="fivehov" style="display: none">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div>
+                                                        <p class="card-title-hov-name">Pixel 6</p>
+                                                        <a class="view-prod-lnk" href="#" data-toggle="modal"
+                                                            data-target="#exampleModalLongs3">viewdetails</a>
+                                                    </div>
+                                                    <button class="btn-buy" data-toggle="modal"
+                                                        data-target="#exampleModalLong">
+                                                        <span class="btn-buy-txt">Buy</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="card" onmouseover="cardSix(this)" onmouseleave="cardHovSix(this)">
+                                    <div class="card-bg-px-six">
+                                        <div class="phn-px-six"></div>
+                                        <div class="card-title-normal" id="six">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <p class="card-title-name">Pixel 6</p>
+                                                    <p class="card-title-rate">$ 499</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="card-review-text">Smart</p>
+                                                    <p class="card-review-count">
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>(1.2k)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-title-normal" id="sixhov" style="display: none">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div>
+                                                        <p class="card-title-hov-name">Pixel 6</p>
+                                                        <a class="view-prod-lnk" href="#" data-toggle="modal"
+                                                            data-target="#exampleModalLongs3">viewdetails</a>
+                                                    </div>
+                                                    <button class="btn-buy" data-toggle="modal"
+                                                        data-target="#exampleModalLong">
+                                                        <span class="btn-buy-txt">Buy</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- col3 -->
+                            <div class=" col-sm-12 col-md-12 col-lg-6 col-xl-4 ">
+                                <div class="card" onmouseover="cardSeven(this)" onmouseleave="cardHovSeven(this)">
+                                    <div class="card-bg-px-six-pro">
+                                        <div class="phn-px-six-pro"></div>
+                                        <div class="card-title-normal" id="seven">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <p class="card-title-name">Pixel 6 Pro</p>
+                                                    <p class="card-title-rate">$ 499</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="card-review-text">Powerful,Smart</p>
+                                                    <p class="card-review-count">
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>(1.2k)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-title-normal" id="sevenhov" style="display: none">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div>
+                                                        <p class="card-title-hov-name">Pixel 6</p>
+                                                        <a class="view-prod-lnk" href="#" data-toggle="modal"
+                                                            data-target="#exampleModalLongs3">viewdetails</a>
+                                                    </div>
+                                                    <button class="btn-buy" data-toggle="modal"
+                                                        data-target="#exampleModalLong">
+                                                        <span class="btn-buy-txt">Buy</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="card" onmouseover="cardEight(this)" onmouseleave="cardHovEight(this)">
+                                    <div class="card-bg-px-five">
+                                        <div class="phn-px-five"></div>
+                                        <div class="card-title-normal" id="eight">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <p class="card-title-name">Pixel 5</p>
+                                                    <p class="card-title-rate">$ 499</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="card-review-text">
+                                                        Smart,powerfull,helpfull
+                                                    </p>
+                                                    <p class="card-review-count">
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>(1.2k)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-title-normal" id="eighthov" style="display: none">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div>
+                                                        <p class="card-title-hov-name">Pixel 5</p>
+                                                        <a class="view-prod-lnk" href="#" data-toggle="modal"
+                                                            data-target="#exampleModalLongs">viewdetails</a>
+                                                    </div>
+                                                    <button class="btn-buy" data-toggle="modal"
+                                                        data-target="#exampleModalLong">
+                                                        <span class="btn-buy-txt">Buy</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="card" onmouseover="cardNine(this)" onmouseleave="cardHovNine(this)">
+                                    <div class="card-bg-px-six-pro">
+                                        <div class="phn-px-six-pro"></div>
+                                        <div class="card-title-normal" id="nine">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <p class="card-title-name">Pixel 6 Pro</p>
+                                                    <p class="card-title-rate">$ 499</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="card-review-text">Powerful,Smart</p>
+                                                    <p class="card-review-count">
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>(1.2k)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-title-normal" id="ninehov" style="display: none">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div>
+                                                        <p class="card-title-hov-name">Pixel 6</p>
+                                                        <a class="view-prod-lnk" href="#" data-toggle="modal"
+                                                            data-target="#exampleModalLongs3">viewdetails</a>
+                                                    </div>
+                                                    <button class="btn-buy" data-toggle="modal"
+                                                        data-target="#exampleModalLong">
+                                                        <span class="btn-buy-txt">Buy</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-end">
+                                <div class="row">
+                                    <div class="prod-mini-stars"></div>
+                                    <p class="product-end-text">Product end here</p>
+                                    <div class="prod-mini-stars"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot">
+        <hr />
+
+        <footer class="footer-section">
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                            <div class="copyright-text">
+                                <p class="footer-copyrights">© 2007-2022 Google inc</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                            <div class="footer-menu">
+                                <ul>
+                                    <li class="terms-footer">
+                                        <a href="#">Terms & conditions</a>
+                                    </li>
+                                    <li class="privacy-footer"><a href="#">privacy</a></li>
+                                    <li class="carrier-footer"><a href="#">carrier</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg" id="exampleModalLong" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content pop-size">
+                <div class="modal-body">
+                    <div class="row">
+                        <p class="pop-title">Buy Pixel 5</p>
+                        <div class="close-icon" data-dismiss="modal" aria-label="Close"></div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="prod-det-card">
+                                    <div class="row">
+                                        <img class="prod-det-img" />
+                                        <div class="coloumn">
+                                            <p class="prod-det-name">Pixel 5</p>
+                                            <p class="prod-det-serial">SKU12345-12</p>
+                                        </div>
+                                        <p class="prod-clr-spec">Black | 128GB</p>
+                                        <p class="prod-det-qty">1 Qty</p>
+                                        <p class="prod-det-rate">$499</p>
+                                    </div>
+                                </div>
+                                <div class="cust-detail">
+                                    <div class="row">
+                                        <p class="cust-add-add-title">ADD ADDRESS</p>
+                                        <p class="cust-save-add-title">SAVE ADDRESS</p>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="inp-sec-name">
+                                                <label for="Name" id="cust-name-label">Name</label><br />
+                                                <input type="text" id="cust-name" name="Name"
+                                                    placeholder="Arny Jackson" /><br />
+                                            </div>
+                                            <div class="inp-sec-contact">
+                                                <label for="Contact" id="cust-contact-label">Contact
+                                                    Number</label><br />
+                                                <input type="number" id="cust-contact" name="Contact"
+                                                    placeholder="+91 99999 99999" /><br />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inp-sec-address">
+                                        <label for="Address" id="cust-address-label">Address</label><br />
+                                        <input type="text" id="cust-address" name="Address"
+                                            placeholder="Dubai main road,Dubai cross street" /><br />
+                                    </div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="drop-sec">
+                                                <label id="drop" for="City">City:</label>
+                                                <select name="City" id="City">
+                                                    <option class="drop-val">
+                                                        Select City
+                                                    </option>
+                                                    <option class="drop-val" value="Chennai">
+                                                        Chennai
+                                                    </option>
+                                                    <option class="drop-val" value="Madurai">
+                                                        Madurai
+                                                    </option>
+                                                    <option class="drop-val" value="Kancheepuram">
+                                                        Kancheepuram
+                                                    </option>
+                                                    <option class="drop-val" value="Chennai">
+                                                        Chennai
+                                                    </option>
+                                                    <option class="drop-val" value="Madurai">
+                                                        Madurai
+                                                    </option>
+                                                    <option class="drop-val" value="Kancheepuram">
+                                                        Kancheepuram
+                                                    </option>
+                                                </select>
+                                            </div>
+                                            <div class="drop-secs">
+                                                <label id="drop" for="Country">Country:</label>
+                                                <select name="Country" id="City">
+                                                    <option class="drop-val">
+                                                        Select Country
+                                                    </option>
+                                                    <option class="drop-val" value="China">
+                                                        China
+                                                    </option>
+                                                    <option class="drop-val" value="India">
+                                                        India
+                                                    </option>
+                                                    <option class="drop-val" value="Kailasha">
+                                                        Kailasha
+                                                    </option>
+                                                    <option class="drop-val" value="China">
+                                                        China
+                                                    </option>
+                                                    <option class="drop-val" value="India">
+                                                        India
+                                                    </option>
+                                                    <option class="drop-val" value="Kailasha">
+                                                        Kailasha
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="prod-invoice">
+                                    <p class="prod-invoice-title">INVOICE SUMMARY</p>
+                                    <div class="prod-bill">
+                                        <div class="row">
+                                            <p id="amt">Actual amount</p>
+                                            <p id="amt-act">$599.00</p>
+                                        </div>
+                                        <div class="row">
+                                            <p id="dis">Discount</p>
+                                            <p id="amt-dis">$60</p>
+                                        </div>
+                                        <div class="row">
+                                            <p id="bill">Billing amount</p>
+                                            <p id="amt-bill">$499</p>
+                                        </div>
+                                        <div class="row">
+                                            <p id="total">Total amount</p>
+                                            <p id="amt-ttl">$499</p>
+                                        </div>
+                                        <button class="btn-pay" href="#">
+                                            <span class="btn-pay-text">Pay $ 499.00</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal2 -->
+    <div class="modal fade bd-example-modal-lg" id="exampleModalLongs" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content px-five-det-pop">
+                <div class="modal-body">
+                    <div class="row">
+                        <p class="px-five-title">Buy Pixel 5</p>
+                        <div class="px-five-close" data-dismiss="modal" aria-label="Close"></div>
+                    </div>
+                    <div class="row">
+                        <div class="right-arrow-img"></div>
+                        <div class="px-five-img-det"></div>
+                        <div class="left-arrow-img"></div>
+                    </div>
+
+                    <div class="container scroll-prod">
+                        <div class="px-five-det-sec">
+                            <div class="px-five-det-clr-sec">
+                                <div class="row">
+                                    <p class="px-five-det-clr">Color</p>
+                                    <p class="px-five-clr-blck"></p>
+                                    <p class="px-five-clr-name-blck">Black</p>
+                                    <p class="px-five-clr-white"></p>
+                                    <p class="px-five-clr-name-white">White</p>
+                                    <p class="px-five-clr-blue"></p>
+                                    <p class="px-five-clr-name-blue">Blue</p>
+                                </div>
+                            </div>
+                            <div class="px-five-disp-det">
+                                <div class="row">
+                                    <p class="px-five-disp-det-name">Display</p>
+                                    <div class="column">
+                                        <p class="px-five-disp-det-content">
+                                            Full-screen 6.1-inch (156 mm)1 display, up to 60 Hz
+                                        </p>
+                                        <p class="px-five-disp-det-content">20:9 aspect ratio</p>
+                                        <p class="px-five-disp-det-content">
+                                            FHD+ (1080 x 2400) OLED at 429 ppi
+                                        </p>
+                                        <p class="px-five-disp-det-content">
+                                            Corning® Gorilla® Glass 3™ cover glass
+                                        </p>
+                                        <p class="px-five-disp-det-content">
+                                            Always-on display with At a Glance and Now Playings
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-five-weight-det">
+                                <div class="row">
+                                    <p class="px-five-weight-det-name">Dimension & Weight</p>
+                                    <div class="column">
+                                        <p class="px-five-weight-det-content">
+                                            6.0 height x 2.8 width x 0.35 depth (in)
+                                        </p>
+                                        <p class="px-five-weight-det-content">
+                                            152.2 height x 71.8 width x 8.9 depth (mm)
+                                        </p>
+                                        <p class="px-five-weight-det-content">6.3 oz</p>
+                                        <p class="px-five-weight-det-content">178 g</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="px-five-weight-det">
+                                <div class="row">
+                                    <p class="px-five-weight-det-name">Battery & charging</p>
+                                    <div class="column">
+                                        <p class="px-five-weight-det-content">
+                                            Upto 72-hour battery life with Extreme Saver
+                                        </p>
+                                        <p class="px-five-weight-det-content">Typical 4410 mAh</p>
+                                        <p class="px-five-weight-det-content">Fast Charging</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-five-weight-det-fs">
+                                <div class="row">
+                                    <p class="px-five-weight-det-name">Memory</p>
+                                    <p class="px-five-weight-det-content">6 GB LPDDRS RAM</p>
+                                </div>
+                            </div>
+                            <div class="px-five-weight-det-fs">
+                                <div class="row">
+                                    <p class="px-five-weight-det-name">Storage</p>
+                                    <p class="px-five-weight-det-content">
+                                        128 GB storage UFS 3.1 storage
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-static-btn">
+                    <div class="row">
+                        <div class="column">
+                            <p class="rate-bottoms-buy">$699</p>
+                            <div class="row">
+                                <p class="card-review-pop">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>(1.2k)
+                                </p>
+                            </div>
+                        </div>
+                        <button class="btn-buy-now" href="#">
+                            <span class="btn-buy-now-txt">Buy now</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal-3 -->
+    <div class="modal fade bd-example-modal-lg" id="exampleModalLongs3" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content px-six-det-pop">
+                <div class="modal-body">
+                    <div class="row">
+                        <p class="px-six-title">Pixel 6</p>
+                        <div class="px-six-close" data-dismiss="modal" aria-label="Close"></div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="right-arrow-img"></div>
+                                    <div class="px-six-img-det"></div>
+                                    <div class="left-arrow-img"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="scroll-static-btn px-six-bottom-name-margin">
+                                    <div class="row">
+                                        <div class="column">
+                                            <p class="px-six-bottom-name">Pixel 6</p>
+                                            <p class="rate-bottom-buy">$699</p>
+                                            <div class="row">
+                                                <p class="card-review-pop-two">
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span><span
+                                                        class="fa fa-star checked"></span>(1.2k)
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <button class="btn-buy-now" href="#">
+                                            <span class="btn-buy-now-txt">Buy now</span>
+                                        </button>
+                                    </div>
+                                    <hr />
+                                </div>
+                                <div class="container scroll-prods">
+                                    <div class="px-six-det-sec">
+                                        <div class="px-six-det-clr-sec">
+                                            <div class="row">
+                                                <p class="px-five-det-clr">Color</p>
+                                                <p class="px-five-clr-blck"></p>
+                                                <p class="px-five-clr-name-blck">Black</p>
+                                                <p class="px-five-clr-white"></p>
+                                                <p class="px-five-clr-name-white">White</p>
+                                                <p class="px-five-clr-blue"></p>
+                                                <p class="px-five-clr-name-blue">Blue</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="px-six-disp-det">
+                                        <div class="row">
+                                            <p class="px-five-disp-det-name">Display</p>
+                                            <div class="column">
+                                                <p class="px-five-disp-det-content">
+                                                    Full-screen 6.1-inch (156 mm)1 display, up to 60 Hz
+                                                </p>
+                                                <p class="px-five-disp-det-content">
+                                                    20:9 aspect ratio
+                                                </p>
+                                                <p class="px-five-disp-det-content">
+                                                    FHD+ (1080 x 2400) OLED at 429 ppi
+                                                </p>
+                                                <p class="px-five-disp-det-content">
+                                                    Corning® Gorilla® Glass 3™ cover glass
+                                                </p>
+                                                <p class="px-five-disp-det-content">
+                                                    Always-on display with At a Glance and Now Playings
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="px-five-weight-det">
+                                        <div class="row">
+                                            <p class="px-five-weight-det-name">
+                                                Dimension & Weight
+                                            </p>
+                                            <div class="column">
+                                                <p class="px-five-weight-det-content">
+                                                    6.0 height x 2.8 width x 0.35 depth (in)
+                                                </p>
+                                                <p class="px-five-weight-det-content">
+                                                    152.2 height x 71.8 width x 8.9 depth (mm)
+                                                </p>
+                                                <p class="px-five-weight-det-content">6.3 oz</p>
+                                                <p class="px-five-weight-det-content">178 g</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="px-five-weight-det">
+                                        <div class="row">
+                                            <p class="px-five-weight-det-name">
+                                                Battery & charging
+                                            </p>
+                                            <div class="column">
+                                                <p class="px-five-weight-det-content">
+                                                    Upto 72-hour battery life with Extreme Saver
+                                                </p>
+                                                <p class="px-five-weight-det-content">
+                                                    Typical 4410 mAh
+                                                </p>
+                                                <p class="px-five-weight-det-content">
+                                                    Fast Charging
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="px-five-weight-det-fs">
+                                        <div class="row">
+                                            <p class="px-five-weight-det-name">Memory</p>
+                                            <p class="px-five-weight-det-content">
+                                                6 GB LPDDRS RAM
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="px-five-weight-det-fs">
+                                        <div class="row">
+                                            <p class="px-five-weight-det-name">Storage</p>
+                                            <p class="px-five-weight-det-content">
+                                                128 GB storage UFS 3.1 storage
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- checkout -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

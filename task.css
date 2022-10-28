@@ -1,0 +1,2331 @@
+body {
+    font-family: montserrat;
+    height: 100vh;
+}
+
+.bg-login {
+    background-color: #f9fbfe;
+    width: 683px;
+    max-width: 683px;
+
+
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./assets/fonts/static/Montserrat-Black.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-ExtraBold;
+    src: url(./assets/fonts/static/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(./assets/fonts/static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(./assets/fonts/static/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(./assets/fonts/static/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url(./assets/fonts/static/Montserrat-SemiBold.ttf);
+}
+
+.form-space {
+    top: 0px;
+    left: 683px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.form {
+    top: 106px;
+    left: 743px;
+    width: 563px;
+    height: 556px;
+    opacity: 1;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 106px;
+}
+
+.welcome {
+    color: #091b29;
+    width: 337px;
+    height: 29px;
+    font-size: 24px;
+    font-family: Montserrat-ExtraBold;
+    text-align: left;
+    opacity: 100%;
+}
+
+.register {
+    text-align: left;
+    font: normal normal 18px/22px Montserrat-Medium;
+    letter-spacing: 0.11px;
+    color: #bbbbbb;
+    opacity: 1;
+}
+
+input[id="names"] {
+    top: 222px;
+    left: 743px;
+    width: 563px;
+    height: 48px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #e4e8ee;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+input[id="names"]:focus {
+    border: 1px solid #219ebc;
+    box-shadow: 0 0 3px #1670BE;
+    outline-offset: 0px;
+    outline: none;
+}
+
+input[id="Email"]:focus {
+    border: 1px solid #219ebc;
+    box-shadow: 0 0 3px #1670BE;
+    outline-offset: 0px;
+    outline: none;
+}
+
+input[id="Pword"]:focus {
+    border: 1px solid #219ebc;
+    box-shadow: 0 0 3px #1670BE;
+    outline-offset: 0px;
+    outline: none;
+}
+
+#togglePassword {
+    cursor: pointer;
+    margin-left: -30px;
+    color: #b4b6b8;
+}
+
+#tgPword {
+    cursor: pointer;
+    margin-left: -30px;
+    color: #b4b6b8;
+}
+
+input[id="Confirm"]:focus {
+    border: 1px solid #219ebc;
+    box-shadow: 0 0 3px #1670BE;
+    outline-offset: 0px;
+    outline: none;
+}
+
+input[id="Email"] {
+    top: 222px;
+    left: 743px;
+    width: 563px;
+    height: 48px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #e4e8ee;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+input[id="Pword"] {
+    top: 222px;
+    left: 743px;
+    width: 563px;
+    height: 48px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #e4e8ee;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+input[id="Confirm"] {
+    top: 222px;
+    left: 743px;
+    width: 563px;
+    height: 48px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #e4e8ee;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+input::after {
+    border: 1px solid #219ebc;
+}
+
+label[for="Uname"] {
+    top: 199px;
+    left: 743px;
+    width: 63px;
+    height: 15px;
+    text-align: left;
+    font: normal normal normal 12px/15px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #98a0ac;
+    opacity: 1;
+}
+
+label[for="Email"] {
+    top: 300px;
+    left: 743px;
+    width: 51px;
+    height: 15px;
+    text-align: left;
+    font: normal normal normal 12px/15px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #98a0ac;
+    opacity: 1;
+}
+
+label[for="Pword"] {
+    top: 502px;
+    left: 743px;
+    width: 104px;
+    height: 15px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 12px/15px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #98a0ac;
+    opacity: 1;
+}
+
+label[for="Confirm"] {
+    top: 199px;
+    left: 743px;
+    width: 63px;
+    height: 15px;
+    text-align: left;
+    font: normal normal normal 12px/15px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #98a0ac;
+    opacity: 1;
+}
+
+.btn-act {
+    top: 613px;
+    left: 743px;
+    width: 563px;
+    height: 49px;
+    background: #219ebc 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 10px #00000014;
+    font: normal normal bold 14px/18px Montserrat-Bold;
+    letter-spacing: 0px;
+    color: #ffffff;
+    border-radius: 4px;
+    opacity: 1;
+    text-align: center;
+    border: #219ebc;
+}
+
+.btn-act:hover {
+    box-shadow: 0px 6px 10px #aeaba2;
+}
+
+.btn-act-txt {
+    top: 629px;
+    left: 968px;
+    width: 114px;
+    height: 18px;
+    font: normal normal bold 14px/18px Montserrat-Bold;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.img-login {
+    margin-top: -40px;
+    position: relative;
+    height: 755px;
+    /* UI Properties */
+    background: transparent url("./assets/Login.svg") 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.google-log {
+    margin-top: 70px;
+    margin-left: 62px;
+    width: 32px;
+    height: 32px;
+    background: transparent url("./assets/google.png") 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: absolute;
+}
+
+.pword-eye {
+    cursor: pointer;
+    margin-left: -30px;
+    width: 20px;
+    height: 15px;
+    background: transparent url("./assets/eye.svg") 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+/* home */
+
+.header {
+    top: 0px;
+    left: 0px;
+    width: 1366px;
+    height: 72px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.google-head {
+    margin-top: 20px;
+    margin-left: 62px;
+    width: 32px;
+    height: 32px;
+    background: transparent url("./assets/google.png") 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.product-sec-head {
+    margin-left: 300px;
+    margin-top: 20px;
+    width: 389px;
+    opacity: 1;
+}
+
+li[id="Home"] {
+    /* margin-top: 28px; */
+    margin-left: 48px;
+    width: 43px;
+    height: 18px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 14px/18px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #4e6e7e;
+    opacity: 1;
+}
+
+li[id="ProductNav"] {
+    margin-left: 48px;
+    width: 65px;
+    height: 18px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal 600 14px/18px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #219ebc;
+    opacity: 1;
+    list-style: disc !important;
+}
+
+li[id="Services"] {
+    margin-left: 48px;
+    width: 57px;
+    height: 18px;
+    text-align: left;
+    font: normal normal normal 14px/18px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #4e6e7e;
+    opacity: 1;
+}
+
+li[id="About"] {
+    margin-left: 48px;
+    width: 63px;
+    height: 18px;
+    text-align: left;
+    font: normal normal normal 14px/18px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #4e6e7e;
+    opacity: 1;
+}
+
+.btn-crt-act {
+    top: 15px;
+    left: 1162px;
+    width: 144px;
+    height: 42px;
+    border: 1px solid #219ebc;
+    background-color: white;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.btn-crt-act:hover {
+    /* background-color:#b4c9cf; */
+    color: white;
+    box-shadow: 0px 6px 10px #62b5ca;
+}
+
+.btn-crt-act-txt {
+    top: 27px;
+    left: 1178px;
+    width: 112px;
+    height: 18px;
+    text-align: left;
+    font: normal normal 600 14px/18px Montserrat-SemiBold;
+    letter-spacing: 0px;
+    color: #219ebc;
+    opacity: 1;
+}
+
+ul[id="filters"] {
+    margin-top: 112px;
+    margin-left: 62px;
+    width: 38px;
+    height: 15px;
+    text-align: left;
+    font: normal normal 600 12px/15px Montserrat-SemiBold;
+    letter-spacing: 0px;
+    color: #B3C1C8;
+    opacity: 1;
+}
+
+li[id="Phones"] {
+    margin-top: 112px;
+    margin-left: 62px;
+    width: 38px;
+    height: 15px;
+    text-align: left;
+    font: normal normal 600 12px/15px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #B3C1C8;
+    opacity: 1;
+}
+
+li[id="Headphones"] {
+    margin-top: px;
+    margin-left: 88px;
+    width: 90px;
+    height: 18px;
+    text-align: left;
+    font: normal normal normal 14px/18px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #9AACB5;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+li[id="Accesories"] {
+    margin-top: 34px;
+    margin-left: 88px;
+    width: 81px;
+    height: 18px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 14px/18px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #9AACB5;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.card {
+    /* top: 112px;
+      left: 377px; */
+    width: 299px;
+    height: 299px;
+    opacity: 1;
+    border: white !important
+}
+
+.card-bg-px-five {
+    /* top: 112px;
+    left: 377px; */
+    width: 299px;
+    height: 239px;
+    background: #E3F7F4 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.card-bg-px-six {
+    top: 112px;
+    left: 692px;
+    width: 299px;
+    height: 239px;
+    background: #EBF5F3 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.card-bg-px-six-pro {
+    top: 112px;
+    left: 1007px;
+    width: 299px;
+    height: 239px;
+    /* UI Properties */
+    background: #F7F7ED 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.card-title-normal {
+    top: 366px;
+    left: 377px;
+    width: 299px;
+    height: 45px;
+    opacity: 1;
+    margin-top: 50px;
+}
+
+.card-title-name {
+    top: 366px;
+    left: 377px;
+    width: 120px;
+    height: 22px;
+    text-align: left;
+    font: normal normal 600 18px/22px Montserrat-Medium;
+    letter-spacing: 0px;
+    color: #023047;
+    opacity: 1;
+}
+
+.card-title-rate {
+    top: 366px;
+    margin-left: 112px;
+    width: 53px;
+    height: 22px;
+    text-align: right;
+    font: normal normal 18px/22px Montserrat-Medium;
+    letter-spacing: 0px;
+    color: #023047;
+    opacity: 1;
+}
+
+.card-review-text {
+    top: 396px;
+    left: 377px;
+    width: 147px;
+    height: 15px;
+    text-align: left;
+    font: normal normal normal 12px/15px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #B3C1C8;
+    opacity: 1;
+}
+
+.card-review-pop {
+    top: 396px;
+    margin-left: 74px;
+    width: 78px;
+    height: 15px;
+    opacity: 1;
+    font: normal normal normal 12px/15px Montserrat-Regular;
+
+}
+
+.card-review-pop-two {
+    margin-left: 14px;
+    margin-right: 110px;
+    width: 78px;
+    height: 15px;
+    opacity: 1;
+    font: normal normal normal 12px/15px Montserrat-Regular;
+}
+
+.card-review-count {
+    top: 396px;
+    margin-left: 74px;
+    width: 78px;
+    height: 15px;
+    opacity: 1;
+    font: normal normal normal 12px/15px Montserrat-Regular;
+}
+
+.cards-reviews-count {
+    top: 396px;
+    margin-left: 74px;
+    margin-right: 110px;
+    width: 78px;
+    height: 15px;
+    opacity: 1;
+    font: normal normal normal 12px/15px Montserrat-Regular;
+}
+
+.checked {
+    color: #FFB703;
+}
+
+.btn-buy {
+    top: 368px;
+    width: 97px;
+    height: 42px;
+    background: #219EBC 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    float: right;
+    border: white
+}
+
+.btn-buy:hover {
+    box-shadow: 0px 6px 10px #aeaba2;
+}
+
+.btn-buy-txt {
+    top: 380px;
+    left: 595px;
+    width: 65px;
+    height: 18px;
+    text-align: left;
+    font: normal normal 600 14px/18px Montserrat-Semibold;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.view-prod-lnk {
+    top: 396px;
+    left: 377px;
+    width: 82px;
+    height: 15px;
+    text-align: left;
+    text-decoration: underline;
+    font: normal normal 12px/15px Montserrat-Medium;
+    letter-spacing: 0px;
+    color: #219EBC;
+    opacity: 1;
+}
+
+.card-title-hov-name {
+    top: 366px;
+    left: 377px;
+    width: 190px;
+    height: 22px;
+    text-align: left;
+    font: normal normal 600 18px/22px Montserrat-Medium;
+    letter-spacing: 0px;
+    color: #023047;
+    opacity: 1;
+}
+
+/* .wdo{
+  width:60px
+} */
+.phn-px-five {
+    margin-top: 41px;
+    margin-left: 93px;
+    margin-right: 81px;
+    margin-bottom: 41px;
+    width: 125px;
+    height: 157px;
+    background: transparent url('./assets/pixel5.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.phn-px-six {
+    margin-top: 41px;
+    margin-left: 87px;
+    margin-right: 87px;
+    margin-bottom: 41px;
+    width: 125px;
+    height: 157px;
+    background: transparent url('./assets/pixel6.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.phn-px-six-pro {
+    margin-top: 39px;
+    margin-left: 86px;
+    margin-right: 86px;
+    margin-bottom: 41px;
+    width: 127px;
+    height: 159px;
+    background: transparent url('./assets/pixel6pro.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.popup-checkout {
+    top: 113px;
+    left: 245px;
+    width: 894px;
+    height: 542px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.Buy {
+    margin-top: 32px;
+    margin-left: 32px;
+    top: 145px;
+    left: 277px;
+    width: 120px;
+    height: 24px;
+    text-align: left;
+    font: normal normal bold 20px/24px Montserrat-Bold;
+    letter-spacing: 0px;
+    color: #023047;
+    opacity: 1;
+}
+
+.Product {
+    top: 209px;
+    left: 277px;
+    width: 545px;
+    height: 88px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.prd-photo {
+    top: 234px;
+    left: 301px;
+    margin-left: 24px;
+    margin-top: 24px;
+    width: 31px;
+    height: 38px;
+    background: transparent url('./assets/CheckPhone.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.prd-name {
+    width: 73px;
+    height: 39px;
+
+    opacity: 1;
+}
+
+.prd-title {
+    width: 55px;
+    height: 19px;
+    text-align: left;
+    font: normal normal bold 16px/19px Montserrat-ExtraBold;
+    letter-spacing: 0px;
+    color: #023047;
+}
+
+.checkboxes {
+    width: 299px;
+    opacity: 1;
+
+}
+
+.check {
+    top: 179px;
+    left: 88px;
+    width: 90px;
+    height: 18px;
+    text-align: left;
+    font: normal normal normal 14px/18px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #9AACB5;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.check:active {
+    top: 179px;
+    left: 88px;
+    width: 90px;
+    height: 18px;
+    text-align: left;
+    font: normal normal normal 14px/18px Montserrat-Medium;
+    letter-spacing: 0px;
+    color: #219ebc;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.horizontal-line {
+    border-top: 1px solid #9E9E9E;
+
+}
+
+.Nav-bar {
+    margin-bottom: 0px !important;
+}
+
+.prod {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    height: 630px;
+    opacity: 1;
+}
+
+.foot {
+    margin-top: 50px;
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+.main {
+    top: 0px;
+    left: 0px;
+}
+
+.check-sec {
+    margin-left: 62px;
+    margin-top: 40px;
+}
+
+.filter-check {
+    top: 112px;
+    left: 62px;
+    width: 38px;
+    height: 15px;
+    text-align: left;
+    font: normal normal 600 12px/15px Montserrat-SemiBold;
+    letter-spacing: 0px;
+    color: #B3C1C8;
+    opacity: 1;
+}
+
+.product-end {
+    top: 1143px;
+    left: 753px;
+    height: 18px;
+    opacity: 1;
+    margin-left: 430px;
+    margin-top: 54px
+}
+
+.product-end-text {
+    top: 1143px;
+    left: 779px;
+    width: 125px;
+    height: 18px;
+    text-align: center;
+    font: normal normal 14px/18px Montserrat-Medium;
+    letter-spacing: 0px;
+    color: #CCD6DA;
+    opacity: 1;
+}
+
+.prod-mini-stars {
+    top: 1144px;
+    left: 753px;
+    width: 17px;
+    height: 16px;
+    background: transparent url('./assets/multipleStars.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    color: black
+}
+
+.footer-copyrights {
+    top: 1241px;
+    left: 62px;
+    width: 170px;
+    height: 15px;
+    text-align: left;
+    font: normal normal normal 12px/15px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #B3C1C8;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.terms-footer {
+    /* margin-left:600px; */
+    top: 1241px;
+    left: 980px;
+    width: 170px;
+    height: 15px;
+    text-align: right;
+    font: normal normal normal 12px/15px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #B3C1C8;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.privacy-footer {
+    top: 1241px;
+    left: 1158px;
+    /* margin-left:62px; */
+    width: 43px;
+    height: 15px;
+    text-align: right;
+    font: normal normal normal 12px/15px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #B3C1C8;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.carrier-footer {
+    top: 1241px;
+    left: 1266px;
+    /* margin-left:65px; */
+    width: 40px;
+    height: 15px;
+    text-align: right;
+    font: normal normal normal 12px/15px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #B3C1C8;
+    text-transform: capitalize;
+    opacity: 1;
+
+}
+
+
+.footer-section {
+    background: white;
+    position: relative;
+}
+
+.copyright-area {
+    background: white;
+    padding: 25px 0;
+}
+
+.copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #878787;
+}
+
+.copyright-text p a {
+    color: #ff5e14;
+}
+
+.footer-menu li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.footer-menu li:hover a {
+    color: #ff5e14;
+}
+
+.footer-menu li a {
+    font-size: 14px;
+    color: #878787;
+}
+
+.pop-size {
+    width: 900px !important;
+    background: #FFFFFF 0% 0% no-repeat padding-box !important;
+    border: 1px solid #E9ECEF !important;
+    border-radius: 4px !important;
+    opacity: 1;
+}
+
+.pop-title {
+    top: 145px;
+    left: 277px;
+    margin-top: 32px;
+    margin-left: 32px;
+    width: 120px;
+    height: 24px;
+    text-align: left;
+    font: normal normal bold 20px/24px Montserrat-Bold;
+    letter-spacing: 0px;
+    color: #023047;
+    opacity: 1;
+}
+
+.close-icon {
+    margin-top: 32px;
+    margin-left: 691px;
+    width: 24px;
+    height: 24px;
+    background: transparent url('./assets/close.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.prod-det-card {
+    margin-top: 40px;
+    width: 545px;
+    height: 88px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.prod-det-img {
+    margin-top: 25px;
+    margin-left: 56px;
+    width: 31px;
+    height: 38px;
+    background: transparent url('./assets/CheckPhone.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.prod-det-name {
+    margin-top: 25px;
+    margin-left: 24px;
+    width: 55px;
+    height: 19px;
+    text-align: left;
+    font: normal normal bold 16px/19px Montserrat-Bold;
+    letter-spacing: 0px;
+    color: #023047;
+    opacity: 1;
+}
+
+.prod-det-serial {
+    top: 258px;
+    margin-left: 24px;
+    width: 75px;
+    height: 15px;
+    text-align: left;
+    font: normal normal normal 12px/15px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #B3C1C8;
+    opacity: 1;
+}
+
+.prod-clr-spec {
+    margin-top: 37px;
+    margin-left: 60px;
+    width: 82px;
+    height: 15px;
+    text-align: left;
+    font: normal normal 12px/15px Montserrat-Medium;
+    letter-spacing: 0px;
+    color: #B3C1C8;
+    opacity: 1;
+}
+
+.prod-det-qty {
+    margin-top: 37px;
+    margin-left: 60px;
+    width: 30px;
+    height: 15px;
+    text-align: left;
+    font: normal normal 12px/15px Montserrat-Medium;
+    letter-spacing: 0px;
+    color: #B3C1C8;
+    opacity: 1;
+}
+
+.prod-det-rate {
+    margin-top: 37px;
+    margin-left: 60px;
+    width: 50px;
+    height: 15px;
+    text-align: right;
+    font: normal normal 600 12px/15px Montserrat-Semibold;
+    letter-spacing: 0px;
+    color: #023047;
+    opacity: 1;
+}
+
+.cust-detail {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 545px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+    opacity: 1
+}
+
+.cust-add-add-title {
+    margin-top: 25px;
+    margin-left: 45px;
+    width: 93px;
+    height: 15px;
+    text-align: left;
+    font: normal normal 600 12px/15px Montserrat-Semibold;
+    letter-spacing: 0px;
+    color: #B3C1C8;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.cust-save-add-title {
+    margin-top: 25px;
+    margin-left: 290px;
+    width: 98px;
+    height: 15px;
+    text-align: right;
+    font: normal normal bold 12px/15px Montserrat-Bold;
+    letter-spacing: 0px;
+    color: #219EBC;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+label[id="cust-name-label"] {
+    top: 379px;
+    left: 300px;
+    width: 37px;
+    height: 15px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 12px/15px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #4E6E7E;
+    opacity: 1;
+}
+
+input[id="cust-name"] {
+    top: 399px;
+    left: 300px;
+    width: 241px;
+    height: 40px;
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.inp-sec-name {
+    margin-top: 27px;
+    width: 241px;
+    height: 60px;
+    margin-left: 15px
+}
+
+input[ id="cust-contact"] {
+    top: 399px;
+    left: 557px;
+    width: 241px;
+    height: 40px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.inp-sec-contact {
+    margin-top: 27px;
+    margin-left: 25px;
+    width: 241px;
+    height: 60px;
+    opacity: 1;
+}
+
+label[id="cust-contact-label"] {
+    top: 379px;
+    left: 300px;
+    width: 105px;
+    height: 15px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 12px/15px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #4E6E7E;
+    opacity: 1;
+}
+
+.inp-sec-address {
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 498px;
+    height: 60px;
+    opacity: 1;
+}
+
+label[id="cust-address-label"] {
+    top: 459px;
+    left: 300px;
+    width: 120px;
+    height: 15px;
+    text-align: left;
+    font: normal normal normal 12px/15px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #4E6E7E;
+    opacity: 1;
+}
+
+input[ id="cust-address"] {
+    top: 479px;
+    left: 300px;
+    width: 510px;
+    height: 40px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.prod-invoice-title {
+    margin-top: 24px;
+    margin-left: 24px;
+    width: 122px;
+    height: 15px;
+    text-align: left;
+    font: normal normal 600 12px/15px Montserrat-Semibold;
+    letter-spacing: 0px;
+    color: #B3C1C8;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.prod-invoice {
+    margin-top: 40px;
+    width: 270px;
+    height: 257px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.prod-bill {
+    margin-top: 20px;
+    margin-left: 24px;
+    width: 222px;
+    height: 174px;
+    opacity: 1;
+}
+
+.btn-pay {
+    margin-top: 24px;
+    width: 222px;
+    height: 42px;
+    background: #219EBC 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    border: white;
+}
+
+.btn-pay:hover {
+    box-shadow: 0px 6px 10px #aeaba2;
+}
+
+.btn-pay-text {
+    top: 412px;
+    left: 926px;
+    width: 92px;
+    height: 18px;
+    text-align: center;
+    font: normal normal 600 14px/18px Montserrat-Semibold;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+p[id="dis"] {
+    margin-left: 24px;
+    top: 299px;
+    left: 861px;
+    width: 55px;
+    height: 15px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal 12px/15px Montserrat-Medium;
+    letter-spacing: 0px;
+    color: #B3C1C8;
+    opacity: 1;
+}
+
+p[id="amt"] {
+    margin-left: 24px;
+    width: 92px;
+    height: 15px;
+    text-align: left;
+    font: normal normal 12px/15px Montserrat-Medium;
+    letter-spacing: 0px;
+    color: #B3C1C8;
+    opacity: 1;
+}
+
+p[id="bill"] {
+    margin-left: 24px;
+    top: 330px;
+    left: 861px;
+    width: 91px;
+    height: 15px;
+    text-align: left;
+    font: normal normal 12px/15px Montserrat-Medium;
+    letter-spacing: 0px;
+    color: #B3C1C8;
+    opacity: 1;
+
+}
+
+p[id="total"] {
+    margin-left: 24px;
+    top: 361px;
+    left: 861px;
+    width: 83px;
+    height: 15px;
+    text-align: left;
+    font: normal normal 600 12px/15px Montserrat-Medium;
+    letter-spacing: 0px;
+    color: #023047;
+    opacity: 1;
+}
+
+p[id="amt-act"] {
+    top: 268px;
+    margin-left: 83px;
+    width: 47px;
+    height: 15px;
+    text-align: right;
+    font: normal normal 12px/15px Montserrat-Medium;
+    letter-spacing: 0px;
+    color: #023047;
+    opacity: 1;
+}
+
+p[id="amt-dis"] {
+    margin-left: 125px;
+    width: 41px;
+    height: 15px;
+    text-align: right;
+    font: normal normal 12px/15px Montserrat-Medium;
+    letter-spacing: 0px;
+    color: #023047;
+    opacity: 1;
+}
+
+p[id="amt-bill"] {
+    margin-left: 81px;
+    width: 49px;
+    height: 15px;
+    text-align: right;
+    font: normal normal 12px/15px Montserrat-Medium;
+    letter-spacing: 0px;
+    color: #023047;
+    opacity: 1;
+
+}
+
+p[id="amt-ttl"] {
+    margin-left: 88px;
+    width: 50px;
+    height: 15px;
+    text-align: right;
+    font: normal normal 600 12px/15px Montserrat-Medium;
+    letter-spacing: 0px;
+    color: #023047;
+    opacity: 1;
+}
+
+.drop-sec {
+    top: 539px;
+    left: 300px;
+    width: 241px;
+    height: 60px;
+    opacity: 1;
+    margin-top: 27px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.drop-secs {
+    top: 539px;
+    left: 300px;
+    width: 241px;
+    height: 60px;
+    opacity: 1;
+    margin-top: 27px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+
+label[id=drop] {
+    top: 539px;
+    left: 300px;
+    width: 90px;
+    height: 15px;
+    text-align: left;
+    font: normal normal normal 12px/15px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #4E6E7E;
+    opacity: 1;
+}
+
+select[id=City] {
+    top: 559px;
+    left: 300px;
+    width: 241px;
+    height: 40px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.drop-val {
+    top: 676px;
+    left: 312px;
+    margin-top: 10px;
+    width: 95px;
+    height: 15px;
+    text-align: left;
+    font: normal normal 12px/15px Montserrat-Medium;
+    letter-spacing: 0px;
+    color: #4E6E7E;
+    opacity: 1;
+}
+
+
+.px-five-det-pop {
+    width: 497px !important;
+    height: auto !important;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E9ECEF;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+.px-five-title {
+    margin-left: 32px;
+    margin-top: 32px;
+    width: 120px;
+    height: 24px;
+    text-align: left;
+    font: normal normal bold 20px/24px Montserrat-Bold;
+    letter-spacing: 0px;
+    color: #023047;
+    opacity: 1;
+}
+
+.px-five-close {
+    width: 24px;
+    height: 24px;
+    background: transparent url('./assets/close.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-top: 32px;
+    margin-right: 32px;
+    margin-left: 260px;
+}
+
+.px-five-img-det {
+    margin-bottom: 47px;
+    margin-right: 118px;
+    margin-left: 118px;
+    width: 133px;
+    height: 167px;
+    background: transparent url('./assets/pix-5.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-top: 40px;
+
+}
+
+.px-five-det-sec {
+    margin-left: 32px;
+    width: 424px;
+    opacity: 1;
+
+}
+
+.px-five-det-clr-sec {
+    top: 350px;
+    left: 476px;
+    width: 334px;
+    height: 18px;
+    opacity: 1;
+}
+
+.px-five-det-clr {
+    top: 350px;
+    left: 476px;
+    width: 38px;
+    height: 18px;
+    text-align: left;
+    font: normal normal 600 14px/18px Montserrat-Semibold;
+    letter-spacing: 0px;
+    color: #023047;
+    opacity: 1;
+}
+
+.px-five-clr-blck {
+    margin-left: 90px;
+    width: 14px;
+    height: 14px;
+    background: #2D3735 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 15px;
+}
+
+.px-five-clr-white {
+    margin-left: 24px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #E9ECEF;
+    opacity: 1;
+    border-radius: 15px;
+}
+
+.px-five-clr-blue {
+    margin-left: 24px;
+    width: 14px;
+    height: 14px;
+    background: #219EBC 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 15px;
+}
+
+.px-five-clr-name-blck {
+    margin-left: 6px;
+    width: 33px;
+    height: 15px;
+    text-align: left;
+    font: normal normal normal 12px/15px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #4E6E7E;
+    opacity: 1;
+}
+
+.px-five-clr-name-white {
+    margin-left: 6px;
+    width: 37px;
+    height: 15px;
+    text-align: left;
+    font: normal normal normal 12px/15px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #4E6E7E;
+    opacity: 1;
+}
+
+.px-five-clr-name-blue {
+    margin-left: 6px;
+    width: 28px;
+    height: 15px;
+    text-align: left;
+    font: normal normal normal 12px/15px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #4E6E7E;
+    opacity: 1;
+}
+
+.px-five-disp-det {
+    margin-top: 32px;
+    width: 424px;
+    height: 145px;
+    opacity: 1;
+}
+
+.px-five-disp-det-name {
+    top: 400px;
+    left: 476px;
+    width: 53px;
+    height: 18px;
+    text-align: left;
+    font: normal normal 600 14px/18px Montserrat-Semibold;
+    letter-spacing: 0px;
+    color: #023047;
+    opacity: 1;
+}
+
+.px-five-disp-det-content {
+    margin-left: 75px;
+    width: 297px;
+    height: 15px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 12px/15px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #4E6E7E;
+    opacity: 1;
+}
+
+.px-five-weight-det {
+    margin-top: 20px;
+    width: 424px;
+    height: 100px;
+    opacity: 1;
+}
+
+.px-five-weight-det-fs {
+    width: 424px;
+    height: 50px;
+    opacity: 1;
+}
+
+.px-five-weight-det-name {
+    width: 70px;
+    height: 18px;
+    text-align: left;
+    font: normal normal 600 14px/18px Montserrat-Semibold;
+    letter-spacing: 0px;
+    color: #023047;
+    opacity: 1;
+}
+
+.px-five-weight-det-content {
+    margin-left: 57px;
+    width: 296px;
+    height: 15px;
+    text-align: left;
+    font: normal normal normal 12px/15px Montserrat-Regular;
+    letter-spacing: 0px;
+    color: #4E6E7E;
+    opacity: 1;
+}
+
+.scroll-head {
+    overflow-y: scroll
+}
+
+.scroll-head::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-prod {
+    height: 124px;
+    overflow-y: scroll;
+}
+
+label[for="phone"] {
+    color: #219ebc
+}
+
+.scroll-prod::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-prods {
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.scroll-prods::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-static-btn {
+    position: sticky;
+    bottom: 0;
+}
+
+.btn-buy-now {
+    width: 97px;
+    height: 42px;
+    background: #219ebc 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 10px #00000014;
+    border-radius: 4px;
+    opacity: 1;
+    text-align: center;
+    border: #219ebc;
+    margin-left: 140px;
+}
+
+.btn-buy-now:hover {
+    box-shadow: 0px 6px 10px #aeaba2;
+}
+
+.btn-buy-now-txt {
+    width: 65px;
+    height: 18px;
+    text-align: left;
+    font: normal normal 600 14px/18px Montserrat-Semibold;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.rate-bottom-buy {
+    width: 49px;
+    height: 22px;
+    text-align: right;
+    font: normal normal 18px/22px Montserrat-Medium;
+    letter-spacing: 0px;
+    color: #023047;
+    opacity: 1;
+}
+
+.rate-bottoms-buy {
+    width: 49px;
+    height: 22px;
+    text-align: right;
+    font: normal normal 18px/22px Montserrat-Medium;
+    letter-spacing: 0px;
+    color: #023047;
+    opacity: 1;
+    margin-left: 55px;
+    margin-right: 125px;
+}
+
+.right-arrow-img {
+    margin-top: 108px;
+    margin-left: 32px;
+    width: 32px;
+    height: 32px;
+    background: transparent url('./assets/left.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.left-arrow-img {
+    margin-top: 108px;
+    width: 32px;
+    height: 32px;
+    background: transparent url('./assets/right.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.px-six-det-pop {
+    width: 896px !important;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E9ECEF;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+.px-six-title {
+    width: 70px;
+    margin-left: 28px;
+    margin-top: 32px;
+    height: 24px;
+    text-align: left;
+    font: normal normal bold 20px/24px Montserrat-Bold;
+    letter-spacing: 0px;
+    color: #023047;
+    opacity: 1;
+}
+
+.px-six-close {
+    margin-top: 32px;
+    margin-left: 740px;
+    width: 24px;
+    height: 24px;
+    background: transparent url('./assets/close.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.px-six-img-det {
+    margin-top: 39px;
+    margin-left: 40px;
+    margin-right: 35px;
+    width: 210px;
+    height: 264px;
+    /* UI Properties */
+    background: transparent url('./assets/pixelSixBig.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.px-six-bottom-sec {
+    top: 138px;
+    left: 684px;
+    width: 78px;
+    height: 77px;
+    opacity: 1;
+}
+
+.px-six-bottom-name {
+    top: 138px;
+    left: 684px;
+    width: 70px;
+    height: 24px;
+    text-align: left;
+    font: normal normal bold 20px/24px Montserrat-Bold;
+    letter-spacing: 0px;
+    color: #023047;
+    opacity: 1;
+}
+
+.px-six-bottom-name-margin {
+    margin-top: 40px;
+}
+
+.px-six-det-sec {
+    width: 334px;
+    height: 18px;
+    opacity: 1;
+}
+
+.px-six-det-clr-sec {
+    margin-top: 44px;
+    width: 334px;
+    height: 18px;
+    opacity: 1;
+
+}
+
+.px-six-disp-det {
+    margin-top: 32px;
+    width: 424px;
+    height: 150px;
+    opacity: 1;
+}
+
+.px-six-weight-det {
+    margin-top: 20px;
+    width: 378px;
+    height: 100px;
+    opacity: 1;
+}
+
+option {
+    padding: 10px;
+}
+
+.prof-sec {
+    width: 67px;
+    height: 42px;
+    border: 1px solid #219EBC;
+    border-radius: 21px;
+    opacity: 1;
+}
+
+.prof-pic {
+    margin-left: 17px;
+    width: 34px;
+    height: 34px;
+    background-color: #1a2f35;
+    opacity: 1;
+    margin-top: 3px;
+    border-radius: 120px;
+}
+
+.prof-let {
+    color: white;
+    font: normal normal bold 20px/24px Montserrat-Bold;
+    padding: 5px;
+    margin-left: 3px;
+}
+
+.bot-arrow {
+    width: 11px;
+    height: 6px;
+    opacity: 1;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.bot-arrow-clr {
+    color: #B3C1C8;
+}
+
+/* .foot{
+  margin-top:1169px;
+} */
+
+.viewd {
+    display: none;
+    font-family: "Montserrat";
+    font-size: 12px;
+    margin-top: 5px;
+
+}
+
+.cardhov:hover+.buybtn {
+    display: block;
+}
+
+.cardhov:hover+.viewd {
+    display: block;
+}
+
+.viewd {
+    display: none;
+}
+
+.buybtn1 {
+    display: none;
+}
+
+.card:hover .viewd {
+    display: block;
+}
+
+.card:hover .buybtn1 {
+    display: block;
+}
+
+.card:hover .smart {
+    display: none;
+}
+
+.card:hover .smartrate {
+    display: none;
+}
+
+.card:hover .pixel4 {
+    display: none;
+}
+
+.card:hover .star {
+    display: none;
+}
+
+.card:hover .rating {
+    display: none;
+}
+
+.card-content {
+    width: 100%;
+    padding: 4px;
+    margin-top: 10px;
+
+
+}
+
+@media only screen and (max-width: 425px) {
+    .scroll-static-btn {
+        width: 496px !important;
+    }
+
+    .google-head {
+        margin-left: 0px !important;
+    }
+
+    .btn-crt-act {
+        margin-left: 10px !important;
+    }
+
+    .card-bg-px-five {
+        width: 343px;
+    }
+
+    .scroll-head {
+        width: 427px;
+        margin-left: 30px !important;
+    }
+
+    .card-title-normal {
+        width: 343px;
+    }
+
+    .card-title-hov-name {
+        width: 243px;
+    }
+
+    .card-review-count {
+        margin-left: 118px;
+    }
+
+    .card-title-rate {
+        margin-left: 160px;
+    }
+
+    .card-bg-px-six-pro {
+        width: 343px;
+    }
+
+    .card-bg-px-six {
+        width: 343px;
+    }
+
+    .product-end {
+        margin-left: 110px;
+    }
+
+    .foot {
+        width: 496px;
+    }
+
+    .tgl-btn {
+        margin-left: 287px;
+    }
+
+    .px-five-det-pop {
+        width: 480px !important;
+    }
+
+    .px-five-img-det {
+        margin-right: 105px;
+        margin-left: 105px;
+    }
+
+    .px-six-det-pop {
+        width: 479px !important;
+    }
+
+    .px-six-close {
+        margin-left: 313px;
+    }
+
+    .px-six-bottom-name-margin {
+        margin-left: 20px;
+        width: 384px !important;
+    }
+
+    .google-log {
+        margin-left: 193px;
+    }
+
+    .bg-login {
+        width: 636px !important;
+        margin-left: -164px;
+        max-width: 636px !important;
+    }
+
+    .form-space {
+        max-width: 478px !important;
+    }
+
+    .form {
+        margin-left: 27px !important;
+        width: 439px;
+    }
+
+    .register {
+        width: 420px;
+    }
+
+    .welcome {
+        width: 420px;
+    }
+
+    input[id="names"] {
+        width: 420px;
+    }
+
+    input[id="Email"] {
+        width: 420px;
+
+    }
+
+    input[id="Pword"] {
+        width: 420px;
+    }
+
+    input[id="Confirm"] {
+        width: 420px;
+
+    }
+
+    .btn-act {
+        width: 420px;
+    }
+
+}
+
+@media screen and (min-device-width : 421px) and (max-device-width : 768px) {
+    .bg-login {
+        max-width: 770px;
+        width: 0;
+    }
+
+    .form {
+        margin-left: 92px
+    }
+}
+
+@media screen and (min-device-width : 769px) and (max-device-width : 1024px) {
+    .product-sec-head {
+        margin-left: 106px !important;
+    }
+
+    .product-end {
+        margin-left: 250px;
+    }
+
+    #head {
+        margin-top: 15px;
+    }
+
+    .product-sec-head {
+        margin-top: 20px;
+        margin-left: 130px;
+
+    }
+
+    .google-log {
+        margin-left: 161px;
+    }
+
+    .img-login {
+        margin-left: -133px
+    }
+
+    .form {
+        margin-left: 30px;
+        margin-right: 30px;
+        width: 469px;
+    }
+
+    input[id="names"] {
+        width: 420px;
+    }
+
+    input[id="Email"] {
+        width: 420px;
+
+    }
+
+    input[id="Pword"] {
+        width: 420px;
+    }
+
+    input[id="Confirm"] {
+        width: 420px;
+
+    }
+
+    .btn-act {
+        width: 420px;
+    }
+
+    .scroll-prod {
+        height: 90px;
+    }
+
+    .px-five-img-det {
+        margin-top: 0px;
+    }
+}
+
+
+@media screen and (min-device-width : 426px) and (max-device-width : 768px) {
+    .tgl-btn {
+        margin-left: 505px;
+    }
+
+    .product-sec-head {
+        margin-left: 0 !important;
+    }
+
+    .btn-crt-act {
+        margin-left: 532px !important;
+    }
+
+    .foot {
+        width: 760px;
+    }
+
+    .product-end {
+        margin-left: 100px;
+    }
+
+    .scroll-head {
+        margin-left: 30px !important;
+    }
+
+    .card-title-normal {
+        width: 343px;
+    }
+
+    .card-title-hov-name {
+        width: 243px;
+    }
+
+    .card-review-count {
+        margin-left: 118px;
+    }
+
+    .card-title-rate {
+        margin-left: 160px;
+    }
+
+    .card-bg-px-five {
+        width: 343px;
+    }
+
+    .card-bg-px-six-pro {
+        width: 343px;
+    }
+
+    .card-bg-px-six {
+        width: 343px;
+    }
+
+    .phn-px-five {
+        margin-left: 100px
+    }
+
+    .phn-px-six-pro {
+        margin-left: 100px
+    }
+
+    .phn-px-six {
+        margin-left: 100px
+    }
+
+    #head {
+        margin-left: 500px
+    }
+
+    .px-six-det-pop {
+        width: 500px !important;
+    }
+
+    .px-six-close {
+        margin-left: 345px;
+    }
+
+    .px-six-bottom-name-margin {
+        margin-left: 25px;
+    }
+
+    .px-five-img-det {
+        margin-top: 0px
+    }
+
+    .scroll-prod {
+        height: 81px;
+    }
+}
+
+
+
+/* @media screen and (min-device-width : 769px) and (max-device-width : 1024px) {
+    .product-sec-head {
+            margin-left: 106px !important;
+        }
+    
+        .product-end {
+            margin-left: 250px;
+        }
+    
+        #head {
+            margin-top: 15px;
+        }
+    
+        .product-sec-head {
+            margin-top: 20px;
+            margin-left: 130px;
+    
+        }
+} */
+/* prod det popup */
+
+@media only screen and (max-width: 768px) {
+    .prod-det-card {
+        width: 420px
+    }
+
+    .prod-det-img {
+        margin-left: 35px
+    }
+
+    .prod-clr-spec {
+        width: 82px;
+        margin-left: 32px;
+    }
+
+    .prod-det-qty {
+        width: 30px;
+        margin-left: 43px;
+    }
+
+    .prod-det-rate {
+        margin-left: 20px;
+    }
+
+    .cust-detail {
+        width: 420px
+    }
+
+    .cust-save-add-title {
+        margin-left: 160px;
+    }
+
+    .cust-add-add-title {
+        margin-left: 49px
+    }
+
+    input[id="cust-address"] {
+        width: 250px;
+    }
+
+    .prod-invoice {
+        width: 420px;
+        margin-top: 5px;
+    }
+
+    .prod-invoice-title {
+        width: 157px;
+        font: normal normal 600 15px/15px Montserrat-Semibold;
+    }
+
+    p[id="amt"] {
+        width: 115px;
+        font: normal normal 15px/15px Montserrat-Medium;
+    }
+
+    p[id="amt-act"] {
+        margin-left: 140px;
+        font: normal normal 15px/15px Montserrat-Medium;
+    }
+
+    .prod-bill {
+        width: 330px;
+    }
+
+    p[id="amt-dis"] {
+        margin-left: 186px;
+        font: normal normal 15px/15px Montserrat-Medium;
+    }
+
+    p[id="dis"] {
+        font: normal normal 15px/15px Montserrat-Medium;
+    }
+
+    p[id="bill"] {
+        width: 115px;
+        font: normal normal 15px/15px Montserrat-Medium;
+    }
+
+    p[id="amt-bill"] {
+        font: normal normal 15px/15px Montserrat-Medium;
+        width: 94px;
+    }
+
+    p[id="total"] {
+        width: 105px;
+        font: normal normal 600 15px/15px Montserrat-Medium;
+    }
+
+    p[id="amt-ttl"] {
+        margin-left: 135px;
+        font: normal normal 600 15px/15px Montserrat-Medium;
+    }
+
+    .btn-pay {
+        width: 375px;
+        margin-top: 15px;
+    }
+
+    .btn-pay-text {
+        font: normal normal 600 16px/18px Montserrat-Semibold;
+    }
+
+    .close-icon {
+        margin-left: 270px;
+    }
+
+    .pop-size {
+        width: 484px !important;
+    }
+
+    input[id="cust-contact"] {
+        width: 360px;
+    }
+
+    .inp-sec-contact {
+        width: 241px;
+        margin-left: 30px
+    }
+
+    .drop-sec {
+        margin-left: 30px
+    }
+
+    .drop-secs {
+        margin-left: 30px;
+        margin-bottom: 30px;
+        margin-top: 5px;
+    }
+
+    select[id=City] {
+        width: 360px;
+    }
+
+    .inp-sec-address {
+        margin-left: 30px
+    }
+
+    .inp-sec-name {
+        margin-left: 30px
+    }
+
+    input[id="cust-address"] {
+        width: 360px
+    }
+
+    input[id="cust-name"] {
+        width: 360px
+    }
+
+
+}
+
+
+/* *{
+    border: 1px solid red;
+} */

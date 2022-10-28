@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>Google</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="./task.css">
+    <link href="./main.html">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 bg-login">
+                <div class="img-login">
+                    <div class="google-log"></div>
+                </div>
+            </div>
+            <div class="col-lg-6 form-space">
+                <div class="form">
+                    <div class="welcome">
+                        <p>Welcome to Google Store!</p>
+                    </div>
+                    <br>
+                    <div class="register">
+                        <p>Register your account</p>
+                    </div>
+                    <form>
+                        <label for="Uname">Username</label><br>
+                        <input type="text" id="names" name="fname"><br><br>
+                        <label for="Email">Email</label><br>
+                        <input type="email" id="Email" name="lname"><br><br>
+                        <label for="Pword">Create Password</label><br>
+                        <input type="password" id="Pword" name="Pword"><i class="fa fa-eye"
+                            id="togglePassword"></i><br><br>
+                        <label for="Pword">Retype Password</label><br>
+                        <input type="password" id="Confirm" name="Confirm"><i class="fa fa-eye"
+                            id="tgPword"></i><br><br><br>
+                        <input type="button" class="btn-act" name="b1" value="Create Account"
+                            onclick="location.href='main.html'">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const togglePassword = document.querySelector("#togglePassword");
+        const password = document.querySelector("#Pword");
+        togglePassword.addEventListener("click", function (e) {
+            // toggle the type attribute
+            const type =
+                password.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+
+            // toggle the eye slash icon
+            this.classList.toggle("fa-eye-slash");
+        });
+
+        const tgPword = document.querySelector("#tgPword");
+        const pword = document.querySelector("#Confirm");
+        tgPword.addEventListener("click", function (e) {
+            // toggle the type attribute
+            const type =
+                pword.getAttribute("type") === "password" ? "text" : "password";
+            pword.setAttribute("type", type);
+
+            // toggle the eye slash icon
+            this.classList.toggle("fa-eye-slash");
+        });
+    </script>
+
+
+
+</body>
+
+</html>
