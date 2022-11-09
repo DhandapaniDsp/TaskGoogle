@@ -1,0 +1,22 @@
+{
+   "mobiles": [
+       {
+           "modal": "Pixel 5",
+           "description": "Smart, powerful, helpful.",
+           "price": "$ 499",
+           "id": 1
+       },
+       {
+           "modal": "Pixel 6",
+           "description": "Smart",
+           "price": "$ 499",
+           "id": 2
+       },
+       {
+           "modal": "Pixel 6 Pro",
+           "description": "Powerful, Smart.",
+           "price": "$ 499",
+           "id": 3
+       }
+   ]
+}
